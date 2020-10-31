@@ -1,5 +1,9 @@
 <resources>
+    <!--Goutham Moorthy 300-948-360-->
     <string name="app_name">Goutham Moorthy 300-948-360</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NameStu">Goutham Moorthy 300-948-360</string>
+    <string name="Button">Goutham Sign In</string>
+    <string name="FirstName">Goutham Moorthy</string>
 </resources>

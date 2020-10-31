@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoorthyActivity">
+    android:background="@drawable/gradient1"
+    tools:context=".MoorthyActivity" >
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_height="69dp"
+        android:background="#FFFF8D"
+        android:text="@string/FirstName"
+        android:textAlignment="center"
+        android:textColor="#82B1FF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="16dp" />
+</RelativeLayout>

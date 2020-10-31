@@ -4,15 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#80D8FF"
     tools:context=".GouthamActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/Textview1"
+        android:layout_width="166dp"
+        android:layout_height="60dp"
+        android:text="@string/NameStu"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="261dp"
+        android:layout_height="477dp"
+        android:src="@drawable/gtrpic"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:password="false"
+        android:text="@string/Button"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="732dp" />
+
+    <EditText
+        android:id="@+id/GouthamUsername"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Username, i.e Goutham.Moorthy"
+        android:inputType="textPassword"
+        android:password_visible="true"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <EditText
+        android:id="@+id/GouthamPassword"
+        android:layout_width="266dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Password is your Student ID"
+        android:inputType="numberPassword"
+        android:password="true"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="647dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
