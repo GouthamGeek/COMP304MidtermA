@@ -29,38 +29,52 @@
         android:layout_width="261dp"
         android:layout_height="477dp"
         android:src="@drawable/gtrpic"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:password="false"
         android:text="@string/Button"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="732dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GouthamPassword" />
 
     <EditText
         android:id="@+id/GouthamUsername"
         android:layout_width="277dp"
         android:layout_height="45dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="2dp"
         android:ems="10"
         android:hint="Username, i.e Goutham.Moorthy"
         android:inputType="textPassword"
         android:password_visible="true"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="583dp" />
+        app:layout_constraintBottom_toTopOf="@+id/GouthamPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/GouthamPassword"
         android:layout_width="266dp"
         android:layout_height="46dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="41dp"
         android:ems="10"
         android:hint="Password is your Student ID"
         android:inputType="numberPassword"
         android:password="true"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
