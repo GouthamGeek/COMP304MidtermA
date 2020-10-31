@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="261dp"
-        android:layout_height="477dp"
+        android:layout_width="262dp"
+        android:layout_height="416dp"
         android:src="@drawable/gtrpic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,11 +55,13 @@
         android:ems="10"
         android:hint="Username, i.e Goutham.Moorthy"
         android:inputType="textPassword"
-        android:password_visible="true"
+
         app:layout_constraintBottom_toTopOf="@+id/GouthamPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/GouthamPassword"
@@ -73,7 +75,7 @@
         android:password="true"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

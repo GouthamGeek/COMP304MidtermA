@@ -16,6 +16,7 @@ public class GouthamActivity extends AppCompatActivity {
 
     EditText GouthamUsername,GouthamPassword;
     Button button;
+    int counter = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +30,15 @@ public class GouthamActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (GouthamUsername.getText().toString().equals("Goutham Moorthy") &&
+                if (GouthamUsername.getText().toString().equals("goutham.moorthy") &&
                         GouthamPassword.getText().toString().equals("300948360")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(
                             GouthamActivity.this
                     );
                     builder.setIcon(R.drawable.check_circle);
                     builder.setTitle("Login Successful!");
+
+                    Verify(GouthamUsername.getText().toString(),GouthamPassword.getText().toString());
 
                     builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
@@ -50,9 +53,30 @@ public class GouthamActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Incorrect Username & Password", Toast.LENGTH_SHORT).show();
 
                 }
+
+
             }
         });
 
 
+
     }
+
+
+    private void Verify(String username, String password)
+    {
+        if((username.equals("goutham.moorthy")) && (password.equals("300948360")))
+        {
+            Intent intent = new Intent(GouthamActivity.this, MoorthyActivity.class);
+            startActivity(intent);
+        }else
+        {
+            counter--;
+            if(counter == 0 )
+            {
+                button.setEnabled(false);
+            }
+        }
+    }
+
 }
