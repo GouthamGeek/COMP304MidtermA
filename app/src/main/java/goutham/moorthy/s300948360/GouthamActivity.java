@@ -22,7 +22,7 @@ public class GouthamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       GouthamUsername = findViewById(R.id.GouthamUsername);
+        GouthamUsername = findViewById(R.id.GouthamUsername);
         GouthamPassword = findViewById(R.id.GouthamPassword);
         button = findViewById(R.id.button);
 
@@ -30,7 +30,7 @@ public class GouthamActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (GouthamUsername.getText().toString().equals("Goutham Moorthy") &&
-                GouthamPassword.getText().toString().equals("300948360")) {
+                        GouthamPassword.getText().toString().equals("300948360")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(
                             GouthamActivity.this
                     );
@@ -46,34 +46,13 @@ public class GouthamActivity extends AppCompatActivity {
 
                     AlertDialog alertDialog = builder.create();
                     alertDialog.show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Incorrect Username & Password", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Incorrect Username & Password", Toast.LENGTH_SHORT).show();
 
                 }
             }
         });
 
-
-        SubmitButton = (Button) findViewById(R.id.button);
-        SubmitButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                login();
-            }
-        });
-
-    }
-
-    public void login(){
-        if(Gusername.getText().toString().equals("goutham.moorthy") && Gpassword.getText().toString().equals("300948360")) {
-            Intent intent = new Intent(this, GouthamActivity.class
-            );
-            startActivity(intent);
-        }
-
-        else {
-            //wrong password
-        }
 
     }
 }
